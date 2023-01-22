@@ -447,7 +447,61 @@ footer {
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 320px) {
 
+  .container {
+    padding: 4px;
+  }
 
+  .btn__menu {
+    display: block;
+  }
+
+  .nav__logo--wrapper {
+    max-width: 100px;
+  }
+
+  .btn__menu {
+    font-size: 24px;
+  }
+
+  .large__circle {
+    margin-top: 32px;
+    height: 200px;
+  }
+
+  .landing__img--wrapper {
+    max-width: 300px;
+  }
+
+  .landing__img {
+    width: 100%;
+  }
+
+  .landing__row {
+    padding-top: 8px;
+  }
+
+  .landing__description {
+    max-width: 225px;
+    width: 100%;
+  }
+
+  .landing__description--header {
+    margin-top: 32px;
+    font-size: 32px;
+  }
+
+  .solution__header {
+    font-size: 32px;
+    width: 300px;
+  }
+
+  .solution {
+    max-width: 300px;
+  }
+
+  .signing__description {
+    width: 225px;
+  }
 }
