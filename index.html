@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800&family=Nunito+Sans:wght@300;400;600;700;800&display=swap");
+    </style>
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="row">
+        <figure class="nav__logo--wrapper">
+          <img
+            class="nav__logo"
+            src="./assets/logos/LawConnect-logo-reverse-RGB.png"
+            alt=""
+          />
+        </figure>
+        <ul class="nav__centre">
+          <li class="nav__centre--list">For People</li>
+          <li class="nav__centre--list">For Businesses</li>
+          <li class="nav__centre--list">Contact</li>
+        </ul>
+        <div class="nav__account">
+          <a class="nav__login" href="">Login</a>
+          <button class="nav__login account-btn" href="">
+            Create Free Account
+          </button>
+        </div>
+      <button class="btn__menu" onclick="openMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="menu__backdrop">
+        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="menu__links">
+          <li class="menu__list">
+            <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+          </li>
+          <li class="menu__list">
+            <a href="#features" class="menu__link" onclick="closeMenu()"
+              >Login</a
+            >
+          </li>
+          <li class="menu__list">
+            <a href="" class="menu__link no__cursor" onclick="closeMenu()"
+              >Create Free Account</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section id="landing">
+      <div class="container landing__container">
+        <div class="row landing__row">
+          <div class="landing__description">
+            <h1 class="landing__description--header">
+              The place to work with your lawyer
+            </h1>
+            <p class="landing__description--para">
+              Your lawyer uses LawConnect to share information with you about
+              your legal case in a private, convenient and secure way.
+            </p>
+            <button class="landing__description--btn account-btn">
+              Create Free Account
+            </button>
+          </div>
+          <div class="large__circle">
+            <div class="small__circle">
+              <figure class="landing__img--wrapper">
+                <picture>
+                  <source
+                    media="(min-width:768px)"
+                    srcset="./assets/images/lc-hero-desktop.png"
+                  />
+                  <source
+                    media="(min-width:550px)"
+                    srcset="./assets/images/lc-hero-mobile@2x.png"
+                  />
+                  <img
+                    class="landing__img"
+                    src="./assets/images/lc-hero-mobile.png"
+                    alt=""
+                  />
+                </picture>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="solution">
+      <div class="container-2">
+        <div class="row solution__row">
+          <h2 class="solution__header">
+            One Solution Designed to Make Your Firm More Money
+          </h2>
+          <ul class="solution__list">
+            <li class="solution">
+              <figure class="solution__img--wrapper">
+                <img
+                  class="solution__img"
+                  src="./assets/images/lc-safe-docs.jpg"
+                  alt=""
+                />
+              </figure>
+              <div class="solution__description">
+                <h4 class="solution__description--header">Safe Documents</h4>
+                <p class="solution__description--para">
+                  LawConnect stores its data on servers provided by Amazon Web
+                  Services and is safer than email.
+                </p>
+              </div>
+            </li>
+            <li class="solution">
+              <figure class="solution__img--wrapper">
+                <img
+                  class="solution__img"
+                  src="./assets/images/lc-work-remote.jpg"
+                  alt=""
+                />
+              </figure>
+              <div class="solution__description">
+                <h4 class="solution__description--header">Work Remotely</h4>
+                <p class="solution__description--para">
+                  You can sign in to LawConnect and view, collaborate and share
+                  your documents from anywhere.
+                </p>
+              </div>
+            </li>
+            <li class="solution">
+              <figure class="solution__img--wrapper">
+                <img
+                  class="solution__img"
+                  src="./assets/images/lc-greater-collab.jpg"
+                  alt=""
+                />
+              </figure>
+              <div class="solution__description">
+                <h4 class="solution__description--header">
+                  Greater Collaboration
+                </h4>
+                <p class="solution__description--para">
+                  Collaborate on documents with clients, lawyers and other
+                  parties with LawConnect's Comment and Reply.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="sharing">
+      <div class="container-2">
+        <div class="row sharing__row">
+          <div class="sharing__description">
+            <h3 class="sharing__description--header">Sharing Documents</h3>
+            <p class="sharing__description--para">
+              Your lawyer will share documents related to your case with you,
+              via LawConnect. Each time a document is shared by your lawyer you
+              will receive an email notification so you can access the document.
+            </p>
+            <p class="sharing__description--para">
+              If you already hav a LawConnect account, you can login and an
+              alert will be in your notifications tab that a document has been
+              shared.
+            </p>
+          </div>
+          <figure class="sharing__img--wrapper">
+            <img
+              class="sharing__img"
+              src="./assets/images/lc-share-docs.png"
+              alt=""
+            />
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section id="signing">
+      <div class="container-2">
+        <div class="row signing__row">
+          <figure class="signing__img--wrapper">
+            <picture>
+              <source
+                media="(min-width:768px)"
+                srcset="./assets/images/lc-sign-docs-desktop.png"
+              />
+              <img
+                class="signing__img"
+                src="./assets/images/lc-sign-docs-mobile.png"
+                alt=""
+              />
+            </picture>
+          </figure>
+          <div class="signing__description">
+            <h3 class="signing__description--header">
+              Signing Documents <br />Electronically
+            </h3>
+            <p class="signing__description--para">
+              LawConnect integrates with DocuSign to provide our users with a
+              quick, easy and secure way to sign important legal documents
+              online.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer></footer>
+  </body>
+</html>
